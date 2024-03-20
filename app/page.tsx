@@ -1,3 +1,4 @@
+import { Aboutme } from "@/components/Aboutme";
 import { Herosection } from "@/components/Herosection";
 
 
@@ -6,8 +7,8 @@ export default function Home() {
     <div>
       <>
       <Herosection />
-      {/* <About Me/>
-      <Tech stack/>
+      <Aboutme/>
+      {/* <Tech stack/>
       <Experiences/>
       <Testimonals/>
       <Contact Me/> */}
