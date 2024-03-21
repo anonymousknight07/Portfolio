@@ -49,13 +49,22 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={aboutmecn(
-          "py-20 flex items-center justify-center",
+          "py-20 flex items-center justify-end",
           containerClassName
         )}
         style={{
           perspective: "1000px",
+          paddingRight: "40px",
         }}
       >
+        <div className="flex flex-col items-start mr-4 space-y-10 space-x-10"> 
+        <h1 className="text-3xl md:text-7xl font-bold text-white text-center ml-10 ">About me</h1> 
+        <p className="text-base leading-relaxed">Hey there! I'm Akshat, a passionate Computer Science Engineering student with a knack for coding and a love for technology. With a strong foundation in languages like C++, Python, and a grasp of the basics in Java, I thrive on solving complex problems and creating innovative solutions.<br></br><span></span>
+        My journey doesn't stop at just programming; I'm also deeply involved in web development, crafting, engaging and dynamic websites that blend functionality with aesthetics seamlessly. Moreover, I'm eagerly delving into the captivating realm of Machine Learning, exploring its endless possibilities to reshape the future.
+        Beyond the world of technology, I find joy in creative pursuits. In my free time, you'll often find me strumming my guitar, letting melodies fill the air, or sketching out scenes from my imagination. Additionally, I channel my thoughts and experiences into writing, penning down insights on entrepreneurship through my blog.<br></br><span></span>
+        Driven by curiosity and fueled by passion, I'm constantly seeking new challenges and opportunities to grow both personally and professionally. Join me on this exhilarating journey as we push the boundaries of innovation and creativity together.</p> 
+      </div>
+      
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}
@@ -89,6 +98,7 @@ export const CardBody = ({
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
+ 
     >
       {children}
     </div>
@@ -145,7 +155,7 @@ export const CardItem = ({
   );
 };
 
-// Create a hook to use the context
+
 export const useMouseEnter = () => {
   const context = useContext(MouseEnterContext);
   if (context === undefined) {
