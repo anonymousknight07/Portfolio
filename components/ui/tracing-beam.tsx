@@ -33,7 +33,7 @@ export const TracingBeam = ({
     }
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
+    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 400]),
     {
       stiffness: 700, // Adjust stiffness for smoother animation
       damping: 50, // Adjust damping for faster animation
@@ -84,7 +84,7 @@ export const TracingBeam = ({
           aria-hidden="true"
         >
           <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
+            d={`M 1 0 V -200 l 18 324 V ${svgHeight * 0.8 + 200} l -18 324 V ${svgHeight}`}
             fill="none"
             stroke="#9091A0"
             strokeOpacity="0.16"
@@ -93,7 +93,7 @@ export const TracingBeam = ({
             }}
           ></motion.path>
           <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
+            d={`M 1 0 V -200 l 18 324 V ${svgHeight * 0.8 + 200} l -18 324 V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
             strokeWidth="5" // Adjust the strokeWidth to make the beam thicker
