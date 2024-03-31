@@ -9,9 +9,9 @@ export function TechStack() {
         users={users}
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-white dark:text-white">
+            <h1 className="text-4xl mb-2 font-semibold  text-white dark:text-white ">
               My<br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-blue-500 ">
                 Tech Stack
               </span>
             </h1>

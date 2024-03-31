@@ -27,6 +27,7 @@ const config: Config = {
     extend: {
       animation: {
         aurora: "aurora 60s linear infinite",
+        
       },
       keyframes: {
         aurora: {
