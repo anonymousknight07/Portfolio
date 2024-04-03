@@ -4,6 +4,8 @@ import { Herosection } from "@/components/Herosection";
 import { Projects } from "@/components/Projects";
 import { Projecttitle } from "@/components/Projecttitle";
 import { TechStack } from "@/components/TechStack";
+import { Journals } from "@/components/journals";
+import { JournalTitle } from "@/components/journaltitle";
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       <Experience />
       <Projecttitle />
       <Projects />
+      <JournalTitle/>
+      <Journals/>
       {/* <Blogs />
       <Testimonals/>
       <Contact Me/> */}

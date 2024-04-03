@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <div className="w-full  flex flex-wrap justify-center gap-11">
       <PinContainer
-        title="/proscenium.vercel.app"
+        title="Click on the name to visit the site"
         href="https://proscenium.vercel.app/" 
         className="border-blue-500"
       >
