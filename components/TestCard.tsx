@@ -9,7 +9,8 @@ export function TestCard() {
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="slow"
+        speed="slow"npm i framer-motion clsx tailwind-merge mini-svg-data-uri
+
       />
     
     </div>

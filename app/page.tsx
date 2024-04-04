@@ -1,6 +1,7 @@
 import { Aboutme } from "@/components/Aboutme";
 import { Experience } from "@/components/Experience";
 import { Herosection } from "@/components/Herosection";
+import { Lamptitle } from "@/components/Lamptitle";
 import { Projects } from "@/components/Projects";
 import { Projecttitle } from "@/components/Projecttitle";
 import { TechStack } from "@/components/TechStack";
@@ -26,6 +27,7 @@ export default function Home() {
       <Journals/>
       <Test/>
       <TestCard/>
+      <Lamptitle/>
       {/* <Contact Me/> */}
       </>
       </div>

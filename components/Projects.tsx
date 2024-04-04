@@ -127,7 +127,7 @@ export function Projects() {
             <a href="https://github.com/anonymousknight07/Project-1-Music-app">
               <Image src="https://cdn.sanity.io/images/w0i6ovrr/production/7aa95f821e7d63d07eeb80a3dd5086d727ec86c8-50x50.png"  className="mt-3 mb-2"width={40} height={40} alt="GitHub Logo" />
             </a>
-            <p className="text-sm">A chatbot to answer the questions of the user.</p>
+            <p className="text-sm">A music web application toplay , browser and search for songs of your choice.</p>
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 " />
           <Image

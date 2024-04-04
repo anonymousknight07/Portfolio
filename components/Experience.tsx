@@ -46,6 +46,31 @@ export function Experience() {
 
 const Content = [
   {
+    title: "Entrepreneurship Club",
+    description: (
+      <>
+        <p>President</p><br></br>
+        <p>
+          As the President of E-CELL, I am responsible for driving the
+          organization's growth and success. My role involves overseeing and
+          managing the day-to-day operations, ensuring the smooth functioning
+          of various teams, and spearheading strategic initiatives that promote
+          entrepreneurship and innovation.
+          <br />
+          In this position, I work closely with teammembers to develop and 
+          implement long-term plans that align with the organization's goals 
+          and vision. I am constantly looking for
+          opportunities to expand our reach, enhance our brand, and build
+          strong relationships with our stakeholders, including investors,
+          mentors, and entrepreneurs.
+        </p>
+      </>
+    ),
+    badge: "March 2024-Present",
+    image:
+      "https://cdn.sanity.io/images/w0i6ovrr/production/db39c2c7488e7911b800e26a08d693455e0d7b41-640x640.png",
+  },
+  {
     title: "Micosoft",
     description: (
       <>
@@ -63,31 +88,6 @@ const Content = [
     badge: "JUNE 2023 - Present ",
     image:
       "https://cdn.sanity.io/images/w0i6ovrr/production/4a595733314f97a197d1abd9499466bf03f80016-3840x2160.png",
-  },
-  {
-    title: "Entrepreneurship Club",
-    description: (
-      <>
-        <p>Vice President</p><br></br>
-        <p>
-          As the Vice President of E-CELL, I am responsible for driving the
-          organization's growth and success. My role involves overseeing and
-          managing the day-to-day operations, ensuring the smooth functioning
-          of various teams, and spearheading strategic initiatives that promote
-          entrepreneurship and innovation.
-          <br />
-          In this position, I work closely with the President and other team
-          members to develop and implement long-term plans that align with the
-          organization's goals and vision. I am constantly looking for
-          opportunities to expand our reach, enhance our brand, and build
-          strong relationships with our stakeholders, including investors,
-          mentors, and entrepreneurs.
-        </p>
-      </>
-    ),
-    badge: "May 2023-Present",
-    image:
-      "https://cdn.sanity.io/images/w0i6ovrr/production/db39c2c7488e7911b800e26a08d693455e0d7b41-640x640.png",
   },
 
   {
