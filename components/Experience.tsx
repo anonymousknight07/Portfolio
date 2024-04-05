@@ -7,7 +7,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 export function Experience() {
   return (
     <TracingBeam className="px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-8 pb-4 relative">
+      <div id="experience" className="max-w-2xl mx-auto antialiased pt-8 pb-4 relative">
         <h1 className="text-4xl md:text-[6rem] text-center font-bold mb-10 leading-none">
           Experience
         </h1><br></br>

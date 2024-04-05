@@ -4,7 +4,7 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 export function TechStack() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div id="techstack" className="flex flex-col overflow-hidden">
       <ContainerScroll
         users={users}
         titleComponent={

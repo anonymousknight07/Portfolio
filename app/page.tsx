@@ -9,6 +9,7 @@ import { Experience } from "@/components/Experience";
 import Footer from "@/components/Footer";
 import { Herosection } from "@/components/Herosection";
 import { Lamptitle } from "@/components/Lamptitle";
+import Navbar from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
 import { Projecttitle } from "@/components/Projecttitle";
 import { TechStack } from "@/components/TechStack";
@@ -23,7 +24,7 @@ export default function Home() {
   return (
     <div>
       <>
-      {/* <Navbar /> */}
+      
       <Herosection />
       <Aboutme/>
       <TechStack/>

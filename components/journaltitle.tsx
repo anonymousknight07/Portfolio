@@ -4,7 +4,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 
 export function JournalTitle() {
   return (
-    <div className="h-[30rem] w-full  bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div id="gallery" className="h-[30rem] w-full  bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1 className="md:text-7xl text-3xl lg:text-8xl font-bold text-center text-white relative z-20">
       Wordsmith &apos;s <span className="text-blue-500">Gallery</span>
       </h1>

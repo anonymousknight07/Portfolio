@@ -8,7 +8,7 @@ import SocialMediaIcons from "./Socialmedia";
 
 export function Lamptitle() {
   return (
-    <div>
+    <div id="social">
       <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}

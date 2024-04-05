@@ -57,7 +57,7 @@ export const CardContainer = ({
           paddingRight: "40px",
         }}
       >
-        <div className="flex flex-col items-start mr-4 space-y-10 space-x-10"> 
+        <div id="Aboutme"  className="flex flex-col items-start mr-4 space-y-10 space-x-10"> 
         <h1 className="text-3xl md:text-7xl font-bold text-white text-center ml-10 ">About <span className="text-blue-500">me</span></h1> 
         <p className="text-base leading-relaxed">Hey there! I'm Akshat, a passionate Computer Science Engineering student with a knack for coding and a love for technology. With a strong foundation in languages like C++, Python, and a grasp of the basics in Java, I thrive on solving complex problems and creating innovative solutions.<br></br><span></span>
         My journey doesn't stop at just programming; I'm also deeply involved in web development, crafting, engaging and dynamic websites that blend functionality with aesthetics seamlessly. Moreover, I'm eagerly delving into the captivating realm of Machine Learning, exploring its endless possibilities to reshape the future.
