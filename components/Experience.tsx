@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint no-use-before-define: 0 */
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -53,13 +53,13 @@ const Content = [
         <p>President</p><br></br>
         <p>
           As the President of E-CELL, I am responsible for driving the
-          organization's growth and success. My role involves overseeing and
+          organization &apos;s growth and success. My role involves overseeing and
           managing the day-to-day operations, ensuring the smooth functioning
           of various teams, and spearheading strategic initiatives that promote
           entrepreneurship and innovation.
           <br />
           In this position, I work closely with teammembers to develop and 
-          implement long-term plans that align with the organization's goals 
+          implement long-term plans that align with the organization&apos;s goals 
           and vision. I am constantly looking for
           opportunities to expand our reach, enhance our brand, and build
           strong relationships with our stakeholders, including investors,
@@ -97,7 +97,7 @@ const Content = [
       <>
       <p>Executive</p><br></br>
         <p>
-          E-Cell IIT Bombay's Campus Executive program is an endeavour to
+          E-Cell IIT Bombay&apos;s Campus Executive program is an endeavour to
           bring out the latent entrepreneurial spirit of young students from
           all around the Globe. It is also an internship opportunity for
           students looking to explore entrepreneurship and develop skills
