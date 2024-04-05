@@ -110,7 +110,7 @@ export const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // split text inside of words into array of characters
+  
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -142,7 +142,7 @@ export const TypewriterEffectSmooth = ({
   return (
     <div className={projecttitlecn("flex space-x-1 my-6", className)}>
       <motion.div
-        className="overflow-hidden pb-2"
+        className="overflow-hidden pb-1"
         initial={{
           width: "0%",
         }}

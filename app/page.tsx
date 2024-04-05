@@ -1,4 +1,10 @@
 import { Aboutme } from "@/components/Aboutme";
+import { Collab } from "@/components/Collab";
+
+import ContactForm from "@/components/ContactMe";
+
+
+
 import { Experience } from "@/components/Experience";
 import { Herosection } from "@/components/Herosection";
 import { Lamptitle } from "@/components/Lamptitle";
@@ -27,8 +33,11 @@ export default function Home() {
       <Journals/>
       <Test/>
       <TestCard/>
-      <Lamptitle/>
-      {/* <Contact Me/> */}
+      <Collab/>
+      <ContactForm/>
+      {/* <Lamptitle/> */}
+      {/* <ContactForm/>
+    */}
       </>
       </div>
   );
