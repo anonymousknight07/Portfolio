@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
+import SocialMediaIcons from "./Socialmedia";
 
 
 
@@ -19,13 +20,13 @@ export function Lamptitle() {
           }}
           className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         >
-        <span className="text-white mt-2">Let &apos;s</span> <br /> <span className="text-blue-600">collaborate</span>
-        
+        <span className="text-white mt-2">Have more questions?</span> <br /> <span className="text-blue-600">Reach out to me on my socials</span>
         </motion.h1>
       
 
-        
+        <SocialMediaIcons/>
       </LampContainer>
+      
   
      
     </div>

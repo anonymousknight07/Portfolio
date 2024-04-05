@@ -6,6 +6,7 @@ import ContactForm from "@/components/ContactMe";
 
 
 import { Experience } from "@/components/Experience";
+import Footer from "@/components/Footer";
 import { Herosection } from "@/components/Herosection";
 import { Lamptitle } from "@/components/Lamptitle";
 import { Projects } from "@/components/Projects";
@@ -35,9 +36,8 @@ export default function Home() {
       <TestCard/>
       <Collab/>
       <ContactForm/>
-      {/* <Lamptitle/> */}
-      {/* <ContactForm/>
-    */}
+      <Lamptitle/>
+      <Footer/>
       </>
       </div>
   );

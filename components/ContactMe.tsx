@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { motion } from "framer-motion";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -9,8 +8,6 @@ const ContactForm: React.FC = () => {
     email: '',
     message: ''
   });
-
-
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -38,34 +35,30 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-   
-    <div style={{ backgroundColor: 'black' }}>
-    <form className='w-full  mx-auto flex flex-col justify-center items-center 'onSubmit={handleSubmit}>
-  <input
-    type="text" id="name" name="name" value={formData.name} onChange={handleChange} required 
-    className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-2 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
-    placeholder="Your Name here"
-  />
-  <input
-   type="email" id="email" name="email" value={formData.email} onChange={handleChange} required 
-    placeholder="Your Email here"
-    className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-3 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
-  />
-  <textarea
-    id="message" name="message" value={formData.message} onChange={handleChange} required
-    className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-3 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
-    placeholder="Your Message here"
-  ></textarea>
-  <input
-    type="submit"
-    value="Send"
-    className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded mt-4 cursor-pointer"
-  />
-</form>
-
-
+    <div style={{ background: 'linear-gradient(to bottom right, black, rgb(2, 7, 24))' }}>
+      <form className='w-full  mx-auto flex flex-col justify-center items-center 'onSubmit={handleSubmit}>
+        <input
+          type="text" id="name" name="name" value={formData.name} onChange={handleChange} required 
+          className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-2 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
+          placeholder="Your Name here"
+        />
+        <input
+          type="email" id="email" name="email" value={formData.email} onChange={handleChange} required 
+          placeholder="Your Email here"
+          className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-3 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
+        />
+        <textarea
+          id="message" name="message" value={formData.message} onChange={handleChange} required
+          className="border text-black input-ele border-gray-300 rounded-md px-4 py-3 mt-3 focus:outline-none focus:ring focus:border-blue-300 w-full max-w-md"
+          placeholder="Your Message here"
+        ></textarea>
+        <input
+          type="submit"
+          value="Send"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded mt-4 mb-7 cursor-pointer"
+        />
+      </form>
     </div>
-
   );
 };
 
