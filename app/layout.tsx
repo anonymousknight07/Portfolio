@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
-          <link rel='icon' href='/favicon.ico' />
+          <link rel='icon' href='https://cdn.sanity.io/images/w0i6ovrr/production/aa0adae0e4fc91fc697771afeafd9a9a24eea0ea-361x361.png' />
         </head>
       <body className={inter.className}>{children}</body>
     </html>

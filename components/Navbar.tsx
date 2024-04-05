@@ -32,12 +32,14 @@ const Navbar: React.FC = () => {
     <nav className={`w-full fixed top-0 z-50 transition-all duration-300 ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`} >
       <div className="container mx-auto px-4 pt-3 pb-6 flex justify-between items-center">
         <div>
+          <a href="#" >
           <Image
             src="/images/logo.png"
             alt="Logo"
             width={50}
             height={50}
           />
+          </a>
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <a href="#" className="text-white font-bold text-lg">Home</a>
