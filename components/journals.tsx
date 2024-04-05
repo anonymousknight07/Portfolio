@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
@@ -28,7 +29,7 @@ export function Journals() {
   );
 }
 
-const Skeleton = ({ imageUrl }) => (
+const Skeleton = ({ imageUrl }: { imageUrl: string }) => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden dark:bg-dot-white/[0.2] bg-dot-black/[0.2] border border-transparent dark:border-black/[0.2] bg-neutral-600 dark:bg-black">
     <img src={imageUrl} alt="Skeleton Image" className="w-full h-auto object-cover" />
   </div>
