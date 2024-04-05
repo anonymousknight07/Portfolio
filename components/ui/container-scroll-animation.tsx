@@ -41,7 +41,7 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+      className="h-screen md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
       ref={containerRef}
     >
       <div
@@ -56,6 +56,7 @@ export const ContainerScroll = ({
           translate={translate}
           scale={scale}
           users={users}
+          isMobile={isMobile}
         />
       </div>
     </div>
@@ -80,6 +81,7 @@ export const Card = ({
   scale,
   translate,
   users,
+  isMobile,
 }: {
   rotate: any;
   scale: any;
@@ -89,6 +91,7 @@ export const Card = ({
     image: string;
     badge?: string;
   }[];
+  isMobile: boolean;
 }) => {
   return (
     <motion.div
@@ -98,7 +101,9 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className={`max-w-5xl mx-auto w-full border-4 border-[#6C6C6C] p-6 bg-[#222222] rounded-[30px] shadow-2xl ${
+        isMobile ? 'h-screen' : 'h-[30rem] md:h-[40rem]'
+      }`}
     >
       <div className="bg-gray-100 h-full w-full rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden p-4">
         {users.map((user, idx: number) => (
@@ -111,7 +116,7 @@ export const Card = ({
                 "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
             }}
           >
-            <div className="absolute top-2 right-2 rounded-full text-xs font-bold bg-black px-2 py-1">
+            <div className="absolute top-2 right-2 rounded-full text-xs font-bold bg-black text-white px-2 py-1">
               {user.badge}
             </div>
             <img
