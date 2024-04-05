@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { aboutmecn } from "@/lib/utils/aboutmecn";
