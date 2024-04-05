@@ -27,8 +27,8 @@ const SocialMediaIcons: React.FC = () => {
             initial={{ opacity: 0.5, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.9, ease: "easeInOut" }}
-            className=" mt-3 mx-6 white"
-            style={{ fontSize: '3rem' }} 
+            className=" mt-3 mx-6 white" // Added "white" class
+            style={{ fontSize: '3rem', color: 'white' }} // Changed color to white
           >
             {socialMedia.icon}
           </motion.h1>

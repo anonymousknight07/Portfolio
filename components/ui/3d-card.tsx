@@ -47,10 +47,11 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (
+    <div className="bg-black">
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={aboutmecn(
-          "py-20 flex items-center justify-end",
+          "py-20 flex items-center justify-end text-white",
           containerClassName
         )}
         style={{
@@ -83,6 +84,7 @@ export const CardContainer = ({
         </div>
       </div>
     </MouseEnterContext.Provider>
+    </div>
   );
 };
 
@@ -96,7 +98,7 @@ export const CardBody = ({
   return (
     <div
       className={aboutmecn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d] text-white",
         className
       )}
  
@@ -148,7 +150,7 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={aboutmecn("w-fit transition duration-200 ease-linear", className)}
+      className={aboutmecn("w-fit transition duration-200 ease-linear text-white", className)}
       {...rest}
     >
       {children}

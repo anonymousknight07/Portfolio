@@ -1,5 +1,4 @@
-
-"use client";
+"use client"
 import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
@@ -7,41 +6,43 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export function Experience() {
   return (
-    <TracingBeam className="px-6">
-      <div id="experience" className="max-w-2xl mx-auto antialiased pt-8 pb-4 relative">
-        <h1 className="text-4xl md:text-[6rem] text-center font-bold mb-10 leading-none">
-          Experience
-        </h1><br></br>
-        {Content.map((item, index) => (
-          <div key={`content-${index}`} className="flex items-start mb-10">
-            {/* Image */}
-            {item?.image && (
-              <div className="mr-9">
-                <Image
-                  src={item.image}
-                  alt="blog thumbnail"
-                  height="400" // Adjust the height as needed
-                  width="400" // Adjust the width as needed
-                  className="rounded-lg mb-4 object-cover"
-                />
-              </div>
-            )}
-            {/* Content */}
-            <div className="text-sm prose prose-sm dark:prose-invert">
-              <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4 text-center md:text-left">
-                {item.badge}
-              </h2>
-              <p className="text-xl mb-4 text-center md:text-left">
-                {item.title}
-              </p>
-              <div className="text-center md:text-left">
-                {item.description}
+    <div className="bg-black">
+      <TracingBeam className="px-6">
+        <div id="experience" className="max-w-2xl mx-auto antialiased pt-8 pb-4 relative">
+          <h1 className="text-4xl md:text-[6rem] text-center font-bold mb-10 leading-none text-white">
+            Experience
+          </h1><br></br>
+          {Content.map((item, index) => (
+            <div key={`content-${index}`} className="flex items-start mb-10">
+              {/* Image */}
+              {item?.image && (
+                <div className="mr-9">
+                  <Image
+                    src={item.image}
+                    alt="blog thumbnail"
+                    height="400" // Adjust the height as needed
+                    width="400" // Adjust the width as needed
+                    className="rounded-lg mb-4 object-cover"
+                  />
+                </div>
+              )}
+              {/* Content */}
+              <div className="text-sm prose prose-sm dark:prose-invert text-white">
+                <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4 text-center md:text-left">
+                  {item.badge}
+                </h2>
+                <p className="text-xl mb-4 text-center md:text-left">
+                  {item.title}
+                </p>
+                <div className="text-center md:text-left">
+                  {item.description}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </TracingBeam>
+          ))}
+        </div>
+      </TracingBeam>
+    </div>
   );
 }
 
@@ -58,7 +59,7 @@ const Content = [
           of various teams, and spearheading strategic initiatives that promote
           entrepreneurship and innovation.
           <br />
-          In this position, I work closely with teammembers to develop and 
+          In this position, I work closely with team members to develop and 
           implement long-term plans that align with the organization&apos;s goals 
           and vision. I am constantly looking for
           opportunities to expand our reach, enhance our brand, and build
@@ -72,10 +73,10 @@ const Content = [
       "https://cdn.sanity.io/images/w0i6ovrr/production/db39c2c7488e7911b800e26a08d693455e0d7b41-640x640.png",
   },
   {
-    title: "Micosoft",
+    title: "Microsoft",
     description: (
       <>
-        <p>Microsoft StartUps Founders Hub</p><br></br>
+        <p>Microsoft Startups Founders Hub</p><br></br>
         <p>
           The Microsoft Startup Founders Hub acts as a thriving ecosystem where
           our startup can connect with like-minded entrepreneurs, fellow

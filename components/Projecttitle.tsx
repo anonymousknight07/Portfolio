@@ -20,7 +20,7 @@ export function Projecttitle() {
     },
   ];
   return (
-    <div id="projects" className="flex flex-col items-center justify-center h-[30rem]  ">
+    <div id="projects" className="bg-black flex flex-col items-center justify-center h-[30rem]  ">
       <TypewriterEffectSmooth words={words} />
     </div>
   );

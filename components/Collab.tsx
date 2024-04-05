@@ -28,7 +28,7 @@ export function Collab() {
     },
   ];
   return (
-    <div id="contact" className="flex flex-col items-center justify-center h-80 ">
+    <div id="contact" className=" bg-black flex flex-col items-center justify-center h-80 ">
       
       <TypewriterEffect words={words} />
       

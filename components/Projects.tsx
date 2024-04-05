@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Projects() {
   return (
-    <div className="w-full  flex flex-wrap justify-center gap-11">
+    <div className=" bg-black w-full  flex flex-wrap justify-center gap-11">
       <PinContainer
         title="Click on the name to visit the site"
         href="https://proscenium.vercel.app/" 
