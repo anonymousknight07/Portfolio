@@ -24,7 +24,7 @@ export function Aboutme() {
         >
           <Image
             src="https://cdn.sanity.io/images/w0i6ovrr/production/f669e95d5ce7f6a079dd6ec68193732c3c7b218e-960x1280.jpg"
-            height="600" // Adjusted height for responsiveness
+            height="600" 
             width="1000"
             className="h-60 sm:h-80 md:h-96 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
